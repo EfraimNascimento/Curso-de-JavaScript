@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+h1{
+    text-align: center;
+    margin: 50px;
+}
+
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    padding: 20px;
+    width: 90%;
+    background-color: gray;
+    color: white;
+}
+
+li{
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    cursor: pointer;
+}
