@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Módulo 1</title>
+    <link rel="stylesheet" href="../../estilos/style.css">
 </head>
 <body>
+   <pre><code id="codigo-tela">Carregando código...</code></pre>
     <a href="../../index.html">Voltar</a>
+     <script>
+        // Puxa o conteúdo do arquivo script.js
+        fetch('modulo1.js')
+            .then(resposta => resposta.text()) // Transforma o arquivo em texto
+            .then(texto => {
+                // Insere o texto dentro da tag code, tratando caracteres especiais
+                document.getElementById('codigo-tela').textContent = texto;
+            })
+            .catch(erro => {
+                document.getElementById('codigo-tela').textContent = "Erro ao carregar o arquivo.";
+            });
+    </script>
+    
     <script src="modulo1.js"></script>
 </body>
 </html>

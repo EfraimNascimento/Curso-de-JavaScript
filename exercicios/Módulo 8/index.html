@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo 9</title>
+    <title>Módulo 8</title>
     <link rel="stylesheet" href="../../estilos/style.css">
 </head>
 <body>
+    <h1>Exercicios</h1>
+    <h2>Async/Await e Consumo de APIs (Fetch)</h2>
     <pre><code id="codigo-tela">Carregando código...</code></pre>
     <a href="../../index.html">Voltar</a>
      <script>
         // Puxa o conteúdo do arquivo script.js
-        fetch('modulo9.js')
+        fetch('modulo8.js')
             .then(resposta => resposta.text()) // Transforma o arquivo em texto
             .then(texto => {
                 // Insere o texto dentro da tag code, tratando caracteres especiais
@@ -21,6 +23,6 @@
                 document.getElementById('codigo-tela').textContent = "Erro ao carregar o arquivo.";
             });
     </script>
-    <script src="modulo9.js"></script>
+    <script src="modulo8.js"></script>
 </body>
 </html>

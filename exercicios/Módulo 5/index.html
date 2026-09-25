@@ -3,15 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo 9</title>
+    <title>Módulo 5</title>
     <link rel="stylesheet" href="../../estilos/style.css">
+    <style>
+        #quadrado{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        #contador{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        #contador > button{
+            height: 20px;
+        }
+    </style>
 </head>
 <body>
+    <h1>Exercicios</h1>
+    <h2>Manipulação do DOM</h2>
+
+    <div id="quadrado">
+
+    </div>
+    <div id="contador">
+        <button class="button">Diminuir</button>
+        <p id="numContador">0</p>
+        <button class="button">Aumentar</button>
+    </div>
+
+    <div>
+        <input type="text" id="tarefas">
+        <button id="btnTarefa">Adicionar</button>
+        <ul id="lista">
+
+        </ul>
+    </div>
+
     <pre><code id="codigo-tela">Carregando código...</code></pre>
     <a href="../../index.html">Voltar</a>
      <script>
         // Puxa o conteúdo do arquivo script.js
-        fetch('modulo9.js')
+        fetch('modulo5.js')
             .then(resposta => resposta.text()) // Transforma o arquivo em texto
             .then(texto => {
                 // Insere o texto dentro da tag code, tratando caracteres especiais
@@ -21,6 +58,6 @@
                 document.getElementById('codigo-tela').textContent = "Erro ao carregar o arquivo.";
             });
     </script>
-    <script src="modulo9.js"></script>
+    <script src="modulo5.js"></script>
 </body>
 </html>
